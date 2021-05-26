@@ -1,0 +1,7 @@
+<nav>
+    {% for content in site.data.navigation %}
+        <a href="content.link"{% if page.url == "content.link" %}style="color: red;"{% endif %}>
+            {{ content.name }}
+        </a>
+    {% endfor %}
+</nav>
